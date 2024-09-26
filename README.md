@@ -1,54 +1,47 @@
-Gráfico de Lucro x Custos com OpenPyXL
-Este projeto gera um gráfico de área comparando Lucros e Custos ao longo dos anos utilizando a biblioteca Python OpenPyXL. Os dados são inseridos em uma planilha Excel e o gráfico é automaticamente criado e salvo no arquivo.
+<h1>📊 Python Excel Automation</h1>
 
-Funcionalidades
-Criação de uma planilha Excel com dados de lucro e custos anuais.
-Geração de um gráfico de área que compara esses dados de forma visual.
-O gráfico possui títulos personalizados e eixos nomeados para fácil interpretação.
-Tecnologias Utilizadas
-Python 3.x
-OpenPyXL: Biblioteca utilizada para manipular planilhas Excel.
-Como Rodar o Projeto
-Pré-requisitos
-Antes de executar o projeto, certifique-se de ter o Python instalado em sua máquina. Você também precisará instalar a biblioteca OpenPyXL, caso ainda não a tenha.
+<p>Este projeto utiliza a biblioteca <code>openpyxl</code> para automatizar a manipulação de planilhas Excel. O objetivo do script é carregar despesas e receitas de arquivos Excel separados, consolidá-las em um novo arquivo, e gerar um gráfico de barras comparando despesas e receitas por ano.</p>
 
-Para instalar o OpenPyXL, execute o comando:
+<h2>🚀 Funcionalidades</h2>
+<ul>
+    <li>Importação de dados de duas planilhas separadas: despesas e receitas.</li>
+    <li>Consolidação das informações em uma nova planilha.</li>
+    <li>Geração automática de um gráfico de barras comparando receitas e despesas por ano.</li>
+</ul>
 
-bash
-Copiar código
-pip install openpyxl
-Passo a Passo
-Clone este repositório:
-bash
-Copiar código
-git clone https://github.com/seu_usuario/seu_projeto.git
-Navegue até o diretório do projeto:
-bash
-Copiar código
-cd seu_projeto
-Execute o script Python:
-bash
-Copiar código
-python criar_grafico.py
-Resultado
-Após a execução do script, um arquivo Excel chamado chart.xlsx será gerado dentro da pasta files. Esse arquivo conterá uma planilha com os dados de lucro e custos por ano, juntamente com um gráfico de área comparando essas informações.
+<h2>📋 Pré-requisitos</h2>
+<p>Certifique-se de ter a biblioteca <code>openpyxl</code> instalada no seu ambiente Python:</p>
 
-Estrutura do Código
-O código está organizado da seguinte forma:
+<pre>
+<code>pip install openpyxl</code>
+</pre>
 
-Entrada de Dados: Os dados de anos, lucros e custos são inseridos manualmente em uma lista de listas.
-Manipulação da Planilha: Utilizando o Workbook da OpenPyXL, os dados são inseridos na planilha.
-Geração de Gráfico: Um gráfico de área é criado a partir dos dados, com títulos e eixos personalizados.
-Salvar o Arquivo: O arquivo Excel é salvo no diretório especificado.
-Exemplo de Dados Utilizados
-Ano	Lucro	Custos
-2017	40	30
-2018	20	60
-2019	70	50
-2020	80	60
-2021	10	20
-2022	40	10
-Personalizações Possíveis
-Alterar os dados de entrada (anos, lucros e custos).
-Modificar o estilo ou tipo de gráfico (área, linha, barras, etc.).
-Customizar os títulos e eixos do gráfico.
+<h2>🛠️ Como usar</h2>
+<ol>
+    <li>Clone o repositório para o seu ambiente local:
+        <pre><code>git clone https://github.com/seu-usuario/seu-repositorio.git</code></pre>
+    </li>
+    <li>Coloque os arquivos de despesas (<code>despesas.xlsx</code>) e receitas (<code>receitas.xlsx</code>) na pasta <code>files/</code>.</li>
+    <li>Execute o script:
+        <pre><code>python excel_automation.py</code></pre>
+    </li>
+</ol>
+
+<h2>📂 Estrutura do Projeto</h2>
+<pre>
+<code>
+📂 projeto-excel-automation/
+ ┣ 📜 excel_automation.py
+ ┣ 📂 files/
+ ┃ ┗ 📜 despesas.xlsx
+ ┃ ┗ 📜 receitas.xlsx
+ ┃ ┗ 📜 demonstrativo.xlsx
+</code>
+</pre>
+
+<h2>📊 Gráfico Gerado</h2>
+<p>Após a execução, o arquivo <code>demonstrativo.xlsx</code> será gerado na pasta <code>files/</code> contendo o gráfico de barras comparando as receitas e despesas de cada ano.</p>
+
+<h2>📬 Contato</h2>
+<p>Se tiver dúvidas ou sugestões, sinta-se à vontade para abrir uma issue ou entrar em contato:</p>
+https://www.linkedin.com/in/kaiqueamerico/
